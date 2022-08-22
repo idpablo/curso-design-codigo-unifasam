@@ -1,2 +1,2 @@
-Nome: Pablo Bento Soares
-Curso: Design Codigo UniFasam
+Nome: Pablo Bento Soares.
+Curso: Boas Praticas no Desenvolvimento de Software.

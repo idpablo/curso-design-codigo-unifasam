@@ -1,18 +1,24 @@
+import javax.sound.midi.Soundbank;
 import java.io.*;
 
 public class createArq {
     public void Arq() {
 
         try {
+            String name = "Curso.txt";
+            OutputStream nameArq = new FileOutputStream(name);
+            Writer writer = new OutputStreamWriter(nameArq);
+            BufferedWriter arqWriter = new BufferedWriter(writer);
 
-            OutputStream nameArq = new FileOutputStream("Curso.txt");
-            Writer writerArq = new OutputStreamWriter(nameArq);
-            BufferedWriter arq = new BufferedWriter(writerArq);
+            System.out.println("Criando e gravando aquivo...");
 
-            arq.write("Nome: Pablo Bento Soares");
-            arq.newLine();
-            arq.write("Curso: Design Codigo UniFasam");
-            arq.close();
+            arqWriter.write("Nome: Pablo Bento Soares.");
+            arqWriter.newLine();
+            arqWriter.write("Curso: Boas Praticas no Desenvolvimento de Software.");
+            arqWriter.close();
+
+            System.out.printf("\nGravação concluida: " + name + "\n");
+
 
         }catch( IOException exc){
             exc.printStackTrace();
