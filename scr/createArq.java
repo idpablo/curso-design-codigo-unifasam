@@ -22,7 +22,6 @@ public class createArq {
 
             System.out.printf("\nGravação concluida: " + name + "\n");
 
-
         }catch( IOException exc){
             exc.printStackTrace();
         }
