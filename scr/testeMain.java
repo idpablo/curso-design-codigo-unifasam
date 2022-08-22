@@ -1,3 +1,5 @@
+package scr;
+
 import java.io.*;
 
 public class testeMain {

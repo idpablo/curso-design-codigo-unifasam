@@ -1,3 +1,5 @@
+package scr;
+
 import javax.sound.midi.Soundbank;
 import java.io.*;
 
