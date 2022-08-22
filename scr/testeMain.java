@@ -1,9 +1,8 @@
 package scr;
-
 import java.io.*;
 
-public class testeMain {
-    public static void main(String[] args) throws IOException {
+public class testeMain throws IOException{
+    public static void main(String[] args)  {
 
         createArq arq = new createArq();
 

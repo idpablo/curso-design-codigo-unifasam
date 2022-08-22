@@ -1,10 +1,8 @@
 package scr;
-
-import javax.sound.midi.Soundbank;
 import java.io.*;
 
 public class createArq {
-    public void Arq() {
+    public void Arq() throws IOException{
 
         try {
             String name = "Curso.txt";
