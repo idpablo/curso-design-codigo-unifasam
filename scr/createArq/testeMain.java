@@ -1,7 +1,7 @@
-package scr;
+package scr.createArq;
 import java.io.*;
 
-public class testeMain{
+public class createArq {
     public static void main(String[] args) throws IOException{
 
         createArq arq = new createArq();

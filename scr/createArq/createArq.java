@@ -1,4 +1,4 @@
-package scr;
+package scr.createArq;
 import java.io.*;
 
 public class createArq {
