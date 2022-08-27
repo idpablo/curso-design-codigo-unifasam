@@ -1,25 +1,11 @@
-package scr.carro;
+package scr.veiculo;
 
-public class Oojava {
+public class carro extends veiculo {
 
-    private String modelo;
-    private String marca;
-    private String cor;
     private String placa;
 
     private Boolean ligado;
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
 
     public void setPlaca(String placa) {
         this.placa = placa;
@@ -27,18 +13,6 @@ public class Oojava {
 
     public void setLigado(Boolean ligado) {
         this.ligado = ligado;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public String getCor() {
-        return cor;
     }
 
     public String getPlaca() {

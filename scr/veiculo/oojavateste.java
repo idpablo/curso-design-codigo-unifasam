@@ -1,12 +1,11 @@
-package scr.carro;
-
-import java.sql.SQLOutput;
+package scr.veiculo;
 
 public class oojavateste {
     public static void main(String[] args) {
         System.out.printf("Teste carro");
 
-        Oojava oo = new Oojava();
+        carro oo = new carro();
+        bicicleta bc = new bicicleta();
 
         oo.setModelo("Gol");
         oo.setMarca("Volksvage,");
@@ -28,6 +27,9 @@ public class oojavateste {
             oo.acerela();
         System.out.println("Desligando o carro");
             oo.desliga();
+
+        bc.usando();
+
 
     }
 }
