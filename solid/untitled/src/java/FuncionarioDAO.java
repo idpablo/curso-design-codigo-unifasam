@@ -2,7 +2,7 @@ package java;
 
 import java.util.List;
 
-public class funcioDAO implements crudDAO{
+public class FuncionarioDAO implements CrudDAO {
     @Override
     public void salvar(Object bean) {
 
