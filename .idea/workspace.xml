@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc9d5d58-f4f2-466d-b8a2-2bbf3e3740e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/folha-pagamento/folha-pagamento.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/folha-pagamento-refactor/folha-pagamento.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/folha-pagamento-refactor/src/TesteFolhaPagamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/folha-pagamento-refactor/src/model/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/folha-pagamento-refactor/src/service/CalculaSalario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/folha-pagamento-refactor/src/service/TipoCargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,23 +41,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/folha-pagamento-refactor" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\java\curso-design-codigo-unifasam" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\java\curso-design-codigo-unifasam\solid" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="testeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scr.testeMain" />
-      <module name="curso-design-codigo-unifasam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="TesteFolhaPagamento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="TesteFolhaPagamento" />
+      <module name="folha-pagamento" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,7 +78,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testeMain" />
+        <item itemvalue="Application.TesteFolhaPagamento" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +90,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661212672660</updated>
-      <workItem from="1662812603813" duration="910000" />
+      <workItem from="1662812603813" duration="2020000" />
+      <workItem from="1662814667464" duration="1296000" />
+      <workItem from="1662816012812" duration="1562000" />
     </task>
     <servers />
   </component>
@@ -100,5 +109,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
