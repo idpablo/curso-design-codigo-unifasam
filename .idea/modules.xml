@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/curso-design-codigo-unifasam.iml" filepath="$PROJECT_DIR$/.idea/curso-design-codigo-unifasam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/folha-pagamento/folha-pagamento.iml" filepath="$PROJECT_DIR$/folha-pagamento/folha-pagamento.iml" />
     </modules>
   </component>
 </project>
