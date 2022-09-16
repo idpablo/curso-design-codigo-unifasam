@@ -22,7 +22,8 @@ public class ImpressaoHolerite implements CalculaSalario {
          "Nome: " + pessoaCalculada.getNome() +
             " Cargo: " + pessoaCalculada.getCargo() +
             " Salario Bruto: " + pessoaCalculada.getSalarioBruto() +
-            " Salario Liquido: " + pessoaCalculada.getSalarioLiquido());
+            " Salario Liquido: " + pessoaCalculada.getSalarioLiquido() +
+            " \n");
         }catch (FileNotFoundException ex){
             ex.printStackTrace();
         }

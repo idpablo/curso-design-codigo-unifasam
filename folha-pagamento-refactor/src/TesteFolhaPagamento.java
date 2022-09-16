@@ -14,7 +14,7 @@ public class TesteFolhaPagamento {
              System.out.printf("Salario Bruto: ");
              BigDecimal salarioBruto = entrada.nextBigDecimal();
 
-             System.out.println("Informe o Cargo: \n 1 - Cordenador\n 2 - Diretor");
+             System.out.println("Informe o Cargo: \n 1 - Cordenador\n 2 - Diretor\n 3 - Professor");
              int opcaoCargo = entrada.nextInt();
              TipoCargo tipoCargo = TipoCargo.values()[opcaoCargo -1];
 
