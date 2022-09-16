@@ -18,18 +18,16 @@ public class TesteFolhaPagamento {
              int opcaoCargo = entrada.nextInt();
              TipoCargo tipoCargo = TipoCargo.values()[opcaoCargo -1];
 
-             CalculaSalario calculaSalario = new CalculaSalario(tipoCargo);
+             CalculaSalario calculaSalario = tipoCargo.getCargo();
 
-             Pessoa pessoa = new Pessoa(
-                     "Pablo",
-                     tipoCargo,
-                     LocalDate.of(1997,11 ,07),
-                     LocalDate.now(),
-                     24,
-                     salarioBruto,
-                     BigDecimal.ZERO);
+             Pessoa pessoa = new Pessoa.Builder()
+                     .nome("Pablo")
+                     .cargo(tipoCargo)
+                     .dataAdmissao(LocalDate.now())
+                     .salarioBruto(salarioBruto)
+                     .build();
 
-             Pessoa pessoaPagar =calculaSalario.calculaSalarioLiquido(pessoa);
+             Pessoa pessoaPagar = calculaSalario.calculaSalarioLiquido(pessoa);
 
              System.out.printf("O Sario liquido do "
              .concat(pessoaPagar.getNome())

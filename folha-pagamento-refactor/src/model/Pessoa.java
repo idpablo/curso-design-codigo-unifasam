@@ -13,15 +13,14 @@ public class Pessoa {
     private BigDecimal salarioBruto;
     private BigDecimal salarioLiquido;
 
-    public Pessoa(String nome, TipoCargo cargo, LocalDate dataNascimento, LocalDate dataAdmissao, Integer idade, BigDecimal salarioBruto, BigDecimal salarioLiquido) {
-        super();
-        this.nome = nome;
-        this.cargo = cargo;
-        this.dataNascimento = dataNascimento;
-        this.dataAdmissao = dataAdmissao;
-        this.idade = idade;
-        this.salarioBruto = salarioBruto;
-        this.salarioLiquido = salarioLiquido;
+    public Pessoa(Builder builder) {
+        setNome(builder.nome);
+        setCargo(builder.cargo);
+        setDataNascimento(builder.dataNascimento);
+        setDataAdmissao(builder.dataAdmissao);
+        setIdade(builder.idade);
+        setSalarioBruto(builder.salarioBruto);
+        setSalarioLiquido(builder.salarioLiquido);
     }
 
     public String getNome() {
@@ -80,7 +79,7 @@ public class Pessoa {
         this.salarioLiquido = salarioLiquido;
     }
 
-    public static class Builder(){
+    public static final class Builder {
         private String nome;
         private TipoCargo cargo;
         private LocalDate dataNascimento;
@@ -92,8 +91,44 @@ public class Pessoa {
         public Builder(){
         }
 
-        public nome(String nome){
+        public Builder nome (String nome){
             this.nome = nome;
+            return this;
+        }
+
+        public Builder cargo (TipoCargo cargo){
+            this.cargo = cargo;
+            return this;
+        }
+
+        public Builder dataNascimento (LocalDate dataNascimento){
+            this.dataNascimento = dataNascimento;
+            return this;
+        }
+
+        public Builder dataAdmissao (LocalDate dataAdmissao){
+            this.dataAdmissao = dataAdmissao;
+            return this;
+        }
+
+        public Builder idade (Integer idade){
+            this.idade = idade;
+            return this;
+        }
+
+        public Builder salarioBruto (BigDecimal salarioBruto){
+            this.salarioBruto = salarioBruto;
+            return this;
+        }
+
+        public Builder salarioLiquido (BigDecimal salarioLiquido){
+            this.salarioLiquido = salarioLiquido;
+            return this;
+        }
+
+        public Pessoa build(){
+            return new Pessoa(this);
         }
     }
+
 }
